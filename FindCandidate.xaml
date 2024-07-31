@@ -22,7 +22,6 @@
             <TextBlock Margin="13">Choose candidate:</TextBlock>
             <ComboBox ItemsSource="{Binding nameCandidates}" SelectionChanged="ComboBox_SelectionChanged" SelectedItem="{Binding SelectedCandidate1}" Name="ComboboxChooseCandidate" Margin="13" Width="200"></ComboBox>
         </WrapPanel>
-        <!--<DataGrid ItemsSource="{Binding Interviews}" Name="DataGridInterviews" Grid.Row="2" Grid.Column="1"/>-->
         <DataGrid ItemsSource="{Binding FilteredInterviews}" Name="DataGridInterviews" Grid.Row="2" Grid.Column="1"/>
 
     </Grid>

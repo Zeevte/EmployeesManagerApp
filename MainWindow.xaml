@@ -21,11 +21,12 @@
         </Grid.ColumnDefinitions>
         <WrapPanel Grid.Row="1" Grid.Column="1" Margin="0, 15, 0, 15">
             <TextBlock Text="Filter by:" Margin="10, 0, 10, 0" ></TextBlock>
+            <!--תרגיל 4-->
             <!--<ComboBox ItemsSource="{Binding Jobs}" Name="ComboBoxFilterCategory" Width="120" SelectedItem="Role in company" Margin="10, 0, 10, 0"></ComboBox>-->
             <ComboBox ItemsSource="{Binding Skills}" Name="ComboBoxFilterCategory" Width="120" SelectedItem="{Binding SelectedFilterBy, Mode=TwoWay}" Margin="10, 0, 10, 0" SelectionChanged="ComboBoxFilterCategory_SelectionChanged"></ComboBox>
-
             <TextBlock Text="Select option" Margin="10, 0, 10, 0"></TextBlock>
             <!--<ComboBox Name="ComboBoxFilterOptions" Width="120" Margin="10, 0, 10, 0"></ComboBox>-->
+            <!--תרגיל 7-->
             <ComboBox ItemsSource="{Binding Jobs}" Name="ComboBoxFilterOptions" Width="120" SelectedItem="{Binding SelectedJob, Mode=TwoWay}" Margin="10, 0, 10, 0" SelectionChanged="ComboBoxFilterCategory_SelectionChanged"></ComboBox>
 
         </WrapPanel>

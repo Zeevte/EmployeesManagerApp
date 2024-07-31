@@ -42,10 +42,6 @@ namespace UI
 
         public List<string> filterBy { get; set; }
 
-
-
-
-
         public MainWindow()
         {
             InitializeComponent();
@@ -68,7 +64,7 @@ namespace UI
         {
             if (!string.IsNullOrEmpty(filter))
             {
-                string propertyName = filter; // כאן אתה שם את שם התכונה
+                string propertyName = filter;
                 List<string> listFilter = new List<string>();
 
                 foreach (var employee in Employees)
@@ -83,18 +79,10 @@ namespace UI
                         }
                     }
                 }
-
                 return listFilter.Distinct().ToList();
             }
             return new List<string>();
         }
-
-
-
-
-
-
-
         public string SelectedJob
         {
             get { return _selectedJob; }
@@ -110,7 +98,7 @@ namespace UI
             }
         }
 
-    private bool EmployeeFilter(object item)
+        private bool EmployeeFilter(object item)
         {
             if (string.IsNullOrEmpty(SelectedJob))
                 return true;
@@ -154,7 +142,7 @@ namespace UI
 
         private bool AddEmployeeWin_del(Employee newEmployee)
         {
-           return  blclass.AddEmployee(newEmployee);
+            return blclass.AddEmployee(newEmployee);
 
         }
 
