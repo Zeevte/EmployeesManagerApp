@@ -66,7 +66,7 @@ namespace UI
             public string phonInterviewer { get; set; }
             public string NameInterviewer { get; set; }
         }
-        //xxxxxxxxxxxx
+      
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var selectedCandidateName = (sender as ComboBox).SelectedItem as string;
