@@ -64,6 +64,7 @@ namespace UI
             public string RoleInCompany { get; set; }
             public DateTime? InterviewDate { get; set; }
             public string phonInterviewer { get; set; }
+
             public string NameInterviewer { get; set; }
         }
 
